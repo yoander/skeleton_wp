@@ -145,7 +145,7 @@ if ( !function_exists( 'skeleton_customizer_styles' ) ) {
             #header span.site-desc {
                 color:{$secondary_color};
             }
-            #navigation ul li a {
+            #navigation ul li a, #footermenu li a {
                  font-family: {$menu_font};
             }
         ";
