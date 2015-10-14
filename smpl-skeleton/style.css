@@ -251,6 +251,7 @@ h1#site-title a,
     display: block;
     font-weight: bold;
     text-shadow: 1px 1px 0px #fff;
+    text-transform: uppercase;
 }
 
 /* Navbar Hover Links */
@@ -472,6 +473,7 @@ h1#site-title a,
   text-decoration: none;
   border-bottom: none;
   font-weight: normal;
+  text-transform: uppercase;
 }
 
 #footermenu li.menu-item-last span {
