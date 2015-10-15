@@ -30,6 +30,34 @@ Text Domain: smpl
     #WP Gallery
     #Misc
 */
+@font-face {
+    font-family: 'icomoon';
+    src:url('css/fonts/icomoon.eot?5mbsiu');
+    src:url('css/fonts/icomoon.eot?5mbsiu#iefix') format('embedded-opentype'),
+        url('css/fonts/icomoon.ttf?5mbsiu') format('truetype'),
+        url('css/fonts/icomoon.woff?5mbsiu') format('woff'),
+        url('css/fonts/icomoon.svg?5mbsiu#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"], .send {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-search:before, .send:before {
+    content: "\e800";
+}
 
 
 
@@ -710,7 +738,7 @@ li.widget-container {
 }
 
 .widget_search #s {/* This keeps the search inputs in line */
-    width: 60%;
+    width: 79%;
 }
 
 .widget_search label {
@@ -981,6 +1009,7 @@ input[type="button"],
   margin-bottom: 0 !important;
   display: inline-block;
   font-stretch: narrower;
+  font-family: inherit;
   font-weight: normal;
   white-space: nowrap;
   padding: .5em 1em !important;
@@ -998,12 +1027,12 @@ input[type="button"],
   -o-border-radius: 2px;
   border-radius: 2px;
   background: #1d65b3;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #2a72c0), color-stop(100%, #1d65b3));
-  background: -webkit-linear-gradient(top, #2a72c0 0%, #1d65b3 100%);
-  background: -o-linear-gradient(top, #2a72c0 0%, #1d65b3 100%);
-  background: -ms-linear-gradient(top, #2a72c0 0%, #1d65b3 100%);
-  background: -moz-linear-gradient(top, #2a72c0 0%, #1d65b3 100%);
-  background: linear-gradient(top bottom, #2a72c0 0%, #1d65b3 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #19F211), color-stop(100%, #227B1F));
+  background: -webkit-linear-gradient(top, #19F211 0%, #227B1F 100%);
+  background: -o-linear-gradient(top, #19F211 0%, #227B1F 100%);
+  background: -ms-linear-gradient(top, #19F211 0%, #227B1F 100%);
+  background: -moz-linear-gradient(top, #19F211 0%, #227B1F 100%);
+  background: linear-gradient(top bottom, #19F211 0%, #227B1F 100%);
   background-clip: border-box;
   position: relative;
   background-repeat: repeat-x;
@@ -1019,12 +1048,12 @@ input[type="reset"]:hover,
 input[type="button"]:hover,
 a.button:hover {
   background: #156bc6;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #156bc6), color-stop(100%, #156bc6));
-  background: -webkit-linear-gradient(top, #156bc6 0%, #156bc6 100%);
-  background: -o-linear-gradient(top, #156bc6 0%, #156bc6 100%);
-  background: -ms-linear-gradient(top, #156bc6 0%, #156bc6 100%);
-  background: -moz-linear-gradient(top, #156bc6 0%, #156bc6 100%);
-  background: linear-gradient(top bottom, #156bc6 0%, #156bc6 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #1E9314), color-stop(100%, #1FD910));
+  background: -webkit-linear-gradient(top, #1E9314 0%, #1FD910 100%);
+  background: -o-linear-gradient(top, #1E9314 0%, #1FD910 100%);
+  background: -ms-linear-gradient(top, #1E9314 0%, #1FD910 100%);
+  background: -moz-linear-gradient(top, #1E9314 0%, #1FD910 100%);
+  background: linear-gradient(top bottom, #1E9314 0%, #1FD910 100%);
   background-clip: border-box;
   position: relative;
   cursor: pointer;
@@ -1522,9 +1551,13 @@ input, textarea {
 }
 input:focus, textarea:focus {
   border-color: rgba(113, 184, 239, 0.8);
+  border-color: rgba(20, 232, 15, 1);
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(33, 177, 30, 1);
   -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(33, 177, 30, 1);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(33, 177, 30, 1);
   outline: 0;
   outline: thin dotted \9;
   /* IE6-9 */
@@ -1715,5 +1748,9 @@ input, textarea {
     #breadcrumb {display: none;}
     #sidebar .widget-container {margin-left: 0px;}
 
+}
+
+.icon-search:before {
+    content: "\e800";
 }
 
