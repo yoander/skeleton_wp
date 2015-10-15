@@ -129,7 +129,11 @@ if ( !function_exists( 'skeleton_customizer_styles' ) ) {
                 font-family: {$body_font};
                 background-color: {$body_bg_color};
             }
-            h1,h2,h3,h4,h5 {
+            h1,h2,h3,h4,h5,button,
+                input[type=\"submit\"],
+                input[type=\"reset\"],
+                input[type=\"button\"],
+                .button a {
                 font-family: {$heading_font};
             }
             a,a:visited {
